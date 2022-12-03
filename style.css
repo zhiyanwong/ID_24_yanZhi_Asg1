@@ -110,6 +110,31 @@ img {
   box-sizing: border-box;
 }
 
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+input.example {
+  border: none;
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
 .content{
   text-align: center;
 }
@@ -137,6 +162,40 @@ img {
   top:40px;
   cursor:pointer;
 }
+
+.model-content{
+  background-color: grey;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%
+}
+.container{
+  padding: 5px;
+}
+div.a {
+  position: relative;
+  width: 400px;
+  height: 200px;
+
+}
+
+div.b {
+  position: absolute;
+  left: auto;
+  width: 550px;
+  height: 120px;
+  padding: 20px 50px;
+
+} 
+
+div.c {
+  position: relative;
+  left: 150px;
+  width: 100px;
+  height: 120px;
+  padding: 20px 250px;
+
+} 
 
 
 @media only screen and (max-width:319px) {
