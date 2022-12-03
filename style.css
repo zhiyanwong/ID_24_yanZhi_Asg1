@@ -94,13 +94,15 @@ img {
 .section.lighter h2 { color: #555; }
 .section.lighter p  { color: #333; }
 
-.section p.box { text-align: center; }
+.section p.box { text-align: center;}
 
 .section .box { 
   background-color: rgba(0,0,0,0.2); 
   border: 1px solid rgba(0,0,0,0.2); 
 }
-
+.searchBar{
+  background-color: black;
+}
 .box { 
   padding: 25px; 
   -webkit-box-sizing: border-box; 
@@ -110,23 +112,6 @@ img {
   box-sizing: border-box;
 }
 
-input[type=text] {
-  width: 200px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 50%;
-}
 
 input.example {
   border: none;
@@ -138,12 +123,19 @@ input.example {
 .content{
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 .column{
   padding-left: 50px;
   float:left;
   width: 50%;
 }
+
 .row:after{
+  content:"";
   display: table;
   clear: both;
 }
@@ -197,6 +189,45 @@ div.c {
 
 } 
 
+#iframeplayer{
+  display:block;
+  margin-bottom: 5px;
+  border: none;
+  overflow: hidden;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #858282;
+  padding: 20px;
+}
 
 @media only screen and (max-width:319px) {
   .centered-wrapper { width: 94% !important; }
